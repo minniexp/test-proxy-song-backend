@@ -12,6 +12,7 @@ app.use(cors());
 
 // Proxy endpoint
 app.get('/api/playlist/:id', async (req, res) => {
+    console.log("proxy endpoint reached");
   const playlistID = req.params.id;
   console.log("playlistID:", playlistID);
   const options = {
